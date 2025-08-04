@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Singku Coffee | Feature Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation (Hamburger Menu) -->
+  <nav class="navbar">
+    <div class="logo">Singku</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Feature</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Create Account Section -->
+  <section class="create-account">
+    <h2>Create an Account</h2>
+    <form class="account-form">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+
+  <!-- Video Section -->
+  <section class="video-section">
+    <h2>🎥 Experience Singku in Motion</h2>
+    <div class="videos">
+      <video autoplay loop muted playsinline>
+        <source src="assets/videos/vid1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video autoplay loop muted playsinline>
+        <source src="assets/videos/vid2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu-section">
+    <h2>☕ Our Coffee-Based Drinks</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="assets/images/1.jpg" alt="Batirol">
+        <p>Batirol</p>
+      </div>
+      <div class="menu-item">
+        <img src="assets/images/7.jpg" alt="Popcorn Latte">
+        <p>Popcorn Latte</p>
+      </div>
+      <div class="menu-item">
+        <img src="assets/images/8.jpg" alt="Strawberry Horchata">
+        <p>Strawberry Horchata</p>
+      </div>
+      <div class="menu-item">
+        <img src="assets/images/9.jpg" alt="Strawberry Matcha">
+        <p>Strawberry Matcha</p>
+      </div>
+      <div class="menu-item">
+        <img src="assets/images/10.jpg" alt="Toffeenut Latte">
+        <p>Toffeenut Latte</p>
+      </div>
+    </div>
+
+    <h2>🍹 Our Refreshers</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="assets/images/2.jpg" alt="Butterbeer">
+        <p>Butterbeer</p>
+      </div>
+      <div class="menu-item">
+        <img src="assets/images/3.jpg" alt="Peach Cream Soda">
+        <p>Peach Cream Soda</p>
+      </div>
+      <div class="menu-item">
+        <img src="assets/images/4.jpg" alt="Pineapple Cream Soda">
+        <p>Pineapple Cream Soda</p>
+      </div>
+      <div class="menu-item">
+        <img src="assets/images/5.jpg" alt="Strawberry Cream Soda">
+        <p>Strawberry Cream Soda</p>
+      </div>
+      <div class="menu-item">
+        <img src="assets/images/6.jpg" alt="Toffeenut Cream Soda">
+        <p>Toffeenut Cream Soda</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Singku Coffee Shop. All rights reserved.</p>
+  </footer>
+
+  <!-- Hamburger Toggle Script -->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>
